@@ -63,10 +63,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 900,
         "resizable": true,
-        "title": "Vite Tauri Template",
-        "width": 800
+        "title": "Will Bender",
+        "width": 1600
       }
     ]
   }
