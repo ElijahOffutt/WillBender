@@ -1,12 +1,7 @@
 <script setup lang="ts">
 
 /* template specific */
-
-import Counter from './modules/counter/mod.vue';
-import Fetcher from './modules/fetcher/mod.vue';
 import Splash from './modules/Splash/index.vue';
-import Left from './modules/Navigation/Left/index.vue';
-import Right from './modules/Navigation/Right/index.vue'
 
 let logged = true;
 
@@ -14,11 +9,19 @@ let logged = true;
 
 <template>
   <v-app>
-    <Splash v-if="!logged" />
-    <Left />
     <v-main class="bg-grey-lighten-4">
       <v-container class="mx-auto" style="max-width: 768px;">
-
+          <h1>Will Bender</h1>
+          <b><i>a ai tool for powerful prompting</i></b>
+          <v-tabs>
+            <v-tab>chat gpt</v-tab>
+            <v-tab>google bard</v-tab>
+            <v-window>
+              <v-window-item>
+                <v-input></v-input>
+              </v-window-item>
+            </v-window>
+          </v-tabs>
       </v-container>
     </v-main>
   </v-app>
