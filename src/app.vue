@@ -5,6 +5,7 @@ import { ref } from 'vue';
 let tab = ref<String>("one");
 let ChatGPT_API_Key = ref<String>("")
 
+function myFunc() { alert("het there") }
 let logged = true;
 
 </script>
@@ -30,7 +31,7 @@ let logged = true;
                 <v-text-field solo label="Chat GPT API Key" v-model="ChatGPT_API_Key" />
               </v-col>
               <v-col class="shrink">
-                <v-btn color="success" block x-large>configure</v-btn>
+                <v-btn @click="myFunc" color="success" block x-large>configure</v-btn>
               </v-col>
             </v-row>
           </v-window-item>
