@@ -23,20 +23,6 @@ let creating = ref(false)
         </v-row>
         <p class="my-3" style="text-indent: 5px;">An ai tool for powerful prompting {{ creating }}</p>
         <v-divider class="mb-5" />
-
-        <!-- <v-row>
-          <v-col cols="8">
-            <v-text-field density="compact" label="ChatGPT API Key" v-model="ChatGPT_API_Key" solo />
-          </v-col>
-          <v-col cols="4">
-            <v-btn @click="fire" size="large" prepend-icon="mdi-check" block :disabled="ChatGPT_API_Key.length == 0"
-              color="success">configure</v-btn>
-          </v-col>
-          <v-col cols="12">
-            <p>{{ text }}</p>
-          </v-col>
-        </v-row> -->
-
         <v-row v-if="!creating">
           <v-col v-for="task in tasks" cols="12">
             <v-btn block>
