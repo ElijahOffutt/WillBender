@@ -10,13 +10,15 @@
         </v-card-title>
         <v-card-text>
             <v-textarea v-model="prompt.task" variant="solo" label="Task Text" />
-            <v-btn>save</v-btn>
+            <v-btn color="green" block>save task</v-btn>
         </v-card-text>
         <v-btn v-for="(item, name) in prompt">{{name}}</v-btn>
         <p>Payload: {{ prompt }}</p>
         <v-divider />
         <v-card-actions>
-            <v-btn v-for="{name, color} in options" variant="default" :color="color">{{name}}</v-btn>
+            <v-btn v-for="{name, color} in options" variant="tonal" 
+            @click="prompt[name] = ''"
+            :color="color">{{name}}</v-btn>
         </v-card-actions>
     </v-card>
 </template>
@@ -35,10 +37,10 @@ const options = [
     { name: 'includes', color: 'green'},
     { name: 'negatives', color: 'red'},
     { name: 'examples', color: 'orange'},
+    { name: 'format', color: 'grey'},
 ]
 let prompt = reactive({
     task: '',
-    tone: ''
 })
 
 let toggle = () => { titleEditMode.value = !titleEditMode.value }
