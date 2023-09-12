@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@alvarosabu/utils@^3.1.1":
+  "integrity" "sha512-DdZNe0i0UsqA2X/+JtaznG4qGorU24FaHqxMAhVspQaC1my+YAVQLpfw8GilHpzMxPxX4sGVzuTnBF8GOdG5oA=="
+  "resolved" "https://registry.npmjs.org/@alvarosabu/utils/-/utils-3.1.1.tgz"
+  "version" "3.1.1"
+
 "@babel/parser@^7.20.15", "@babel/parser@^7.21.3":
   "integrity" "sha512-7NF8pOkHP5o2vpmGgNGcfAeCvOYhGLyA3Z4eBQkT1RJlWu47n63bCs93QfJ2hIAFCil7L5P2IWhs1oToVgrL0Q=="
   "resolved" "https://registry.npmjs.org/@babel/parser/-/parser-7.22.7.tgz"
@@ -48,6 +53,14 @@
     "@tauri-apps/cli-win32-ia32-msvc" "1.4.0"
     "@tauri-apps/cli-win32-x64-msvc" "1.4.0"
 
+"@tresjs/core@^3.2.1":
+  "integrity" "sha512-akmI8v9aoDZkB6ymrbu0PozXFKcA0Bnr1j9FMM8DJOLKx4rFBu8qM0pAwkaOL5YBuz8B0I66pc+f5GxmDlQIqQ=="
+  "resolved" "https://registry.npmjs.org/@tresjs/core/-/core-3.2.1.tgz"
+  "version" "3.2.1"
+  dependencies:
+    "@alvarosabu/utils" "^3.1.1"
+    "@vueuse/core" "^10.3.0"
+
 "@types/node-fetch@^2.6.4":
   "integrity" "sha512-1ZX9fcN4Rvkvgv4E6PAY5WXUFWFcRWxZa3EW83UjycOB9ljJCedb2CupIP4RZMEwF/M3eTcCihbBRgwtGbg5Rg=="
   "resolved" "https://registry.npmjs.org/@types/node-fetch/-/node-fetch-2.6.4.tgz"
@@ -60,6 +73,11 @@
   "integrity" "sha512-ZE/5aB73CyGqgQULkLG87N9GnyGe5TcQjv34pwS8tfBs1IkCh0ASM69mydb2znqd6v0eX+9Ytvk6oQRqu8T1Vw=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.17.14.tgz"
   "version" "18.17.14"
+
+"@types/web-bluetooth@^0.0.17":
+  "integrity" "sha512-4p9vcSmxAayx72yn70joFoL44c9MO/0+iVEBIQXe3v2h2SiAsEIo/G5v6ObFWvNKRFjbrVadNf9LqEEZeQPzdA=="
+  "resolved" "https://registry.npmjs.org/@types/web-bluetooth/-/web-bluetooth-0.0.17.tgz"
+  "version" "0.0.17"
 
 "@vitejs/plugin-vue@4.0.0":
   "integrity" "sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA=="
@@ -163,6 +181,28 @@
   dependencies:
     "find-cache-dir" "^3.3.2"
     "upath" "^2.0.1"
+
+"@vueuse/core@^10.3.0", "@vueuse/core@^10.4.1":
+  "integrity" "sha512-DkHIfMIoSIBjMgRRvdIvxsyboRZQmImofLyOHADqiVbQVilP8VVHDhBX2ZqoItOgu7dWa8oXiNnScOdPLhdEXg=="
+  "resolved" "https://registry.npmjs.org/@vueuse/core/-/core-10.4.1.tgz"
+  "version" "10.4.1"
+  dependencies:
+    "@types/web-bluetooth" "^0.0.17"
+    "@vueuse/metadata" "10.4.1"
+    "@vueuse/shared" "10.4.1"
+    "vue-demi" ">=0.14.5"
+
+"@vueuse/metadata@10.4.1":
+  "integrity" "sha512-2Sc8X+iVzeuMGHr6O2j4gv/zxvQGGOYETYXEc41h0iZXIRnRbJZGmY/QP8dvzqUelf8vg0p/yEA5VpCEu+WpZg=="
+  "resolved" "https://registry.npmjs.org/@vueuse/metadata/-/metadata-10.4.1.tgz"
+  "version" "10.4.1"
+
+"@vueuse/shared@10.4.1":
+  "integrity" "sha512-vz5hbAM4qA0lDKmcr2y3pPdU+2EVw/yzfRsBdu+6+USGa4PxqSQRYIUC9/NcT06y+ZgaTsyURw2I9qOFaaXHAg=="
+  "resolved" "https://registry.npmjs.org/@vueuse/shared/-/shared-10.4.1.tgz"
+  "version" "10.4.1"
+  dependencies:
+    "vue-demi" ">=0.14.5"
 
 "abort-controller@^3.0.0":
   "integrity" "sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg=="
@@ -625,6 +665,11 @@
   "resolved" "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz"
   "version" "1.0.2"
 
+"three@^0.156.1", "three@>=0.133":
+  "integrity" "sha512-kP7H0FK9d/k6t/XvQ9FO6i+QrePoDcNhwl0I02+wmUJRNSLCUIDMcfObnzQvxb37/0Uc9TDT0T1HgsRRrO6SYQ=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.156.1.tgz"
+  "version" "0.156.1"
+
 "to-regex-range@^5.0.1":
   "integrity" "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ=="
   "resolved" "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz"
@@ -667,7 +712,12 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
-"vue@^3.0.0", "vue@^3.2.0", "vue@^3.2.25", "vue@3.3.4":
+"vue-demi@>=0.14.5":
+  "integrity" "sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w=="
+  "resolved" "https://registry.npmjs.org/vue-demi/-/vue-demi-0.14.6.tgz"
+  "version" "0.14.6"
+
+"vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.0", "vue@^3.2.25", "vue@>=3.3", "vue@3.3.4":
   "integrity" "sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.3.4.tgz"
   "version" "3.3.4"
